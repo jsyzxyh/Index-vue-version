@@ -70,12 +70,12 @@ export default {
 .index_form{
   text-align: center;
   width: 250px;
-  margin: 200px auto 0 auto;
+  margin: 200px auto 0;
   .el-input{
     font-size: 18px;
   }
   .el-form-item__label{
-    font-size:18px;
+    font-size: 18px;
   }
   .el-form-item__content .el-button span{
     font-size: 16px;

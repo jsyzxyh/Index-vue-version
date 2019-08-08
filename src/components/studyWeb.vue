@@ -82,11 +82,11 @@ export default {
 <style lang="scss">
 .infomation{
   position: absolute;
-  width: 30%;
+  width: 430px;
   left: 0;
   right: 0;
   font-size: 22px;
-  margin: 50px auto 0 auto;
+  margin: 50px 0 0;
   text-align: center;
   .searchBox{
     display: flex;

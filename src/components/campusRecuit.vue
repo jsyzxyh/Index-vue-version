@@ -81,7 +81,7 @@ export default {
 <style lang="scss">
 .website{
   position: absolute;
-  width: 30%;
+  width: 500px;
   left: 0;
   right: 0;
   font-size: 22px;

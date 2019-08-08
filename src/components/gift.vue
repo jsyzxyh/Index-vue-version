@@ -53,6 +53,11 @@ export default {
   text-align: center;
   margin-top: 160px;
   font-size:25px;
+  #blink {
+    h3 {
+      margin-bottom: 10px
+    }
+  }
   .flower{
     padding-top: 30px;
   }
