@@ -12,6 +12,9 @@
       <el-collapse-item title="Python" name="2">
         <a style="font-size:22px" v-for="item in pythonWeb" :key="item.url" :href="item.url" target="_blank">{{ item.name }}</a>
       </el-collapse-item>
+      <el-collapse-item title="前端" name="3">
+        <div class="front_end" v-for="(item) in frontPage" :key="item.url" @click="goToFrontPage(item.url)">{{ item.name }}</div>
+      </el-collapse-item>
     </el-collapse>
     <el-button type="success" @click="backToWeb">返回</el-button>
   </div>
@@ -62,6 +65,24 @@ export default {
           name: '100天学会Python(Github)',
           url: 'https://github.com/jackfrued/Python-100-Days'
         }
+      ],
+      frontPage: [
+        {
+          name: '前端知识',
+          url: '/FrontEnd'
+        },
+        {
+          name: 'HTML and CSS',
+          url: '/HtmlCss'
+        },
+        {
+          name: 'Javascript',
+          url: '/Javascript'
+        },
+        {
+          name: '网络基础',
+          url: '/Network'
+        }
       ]
     }
   },
@@ -73,6 +94,11 @@ export default {
     backToWeb () {
       this.$router.push({
         path: '/campusRecuit'
+      })
+    },
+    goToFrontPage (url) {
+      this.$router.push({
+        path: url
       })
     }
   }
@@ -117,12 +143,23 @@ export default {
   }
   .el-collapse{
     margin-bottom: 10px;
-    .el-collapse-item__content a{
-      margin: 13px 0 0 0;
-    }
     .el-collapse-item__header{
       height: 55px;
       font-size: 20px;
+    }
+    .el-collapse-item__content{
+      font-size: 22px;
+       a{
+        margin: 13px 0 0 0;
+      }
+      .front_end{
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .front_end:hover{
+        color: blue;
+        text-decoration:underline
+      }
     }
   }
 }

@@ -10,7 +10,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import Vuex from 'vuex'
 // 引入 axios
 import axios from 'axios'
-
+// 引入 vuex
+import store from './store.js'
 // 使用axios
 Vue.prototype.$axios = axios
 // 使用vuex
@@ -24,6 +25,7 @@ Vue.use(ElementUI)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
   render: h => h(App)
