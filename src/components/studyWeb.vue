@@ -86,7 +86,7 @@ export default {
   left: 0;
   right: 0;
   font-size: 22px;
-  margin: 50px 0 0;
+  margin: 50px auto 0;
   text-align: center;
   .searchBox{
     display: flex;
