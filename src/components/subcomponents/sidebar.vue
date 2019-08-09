@@ -3,7 +3,7 @@
     <el-row class="tac">
       <el-col :span="3">
         <el-menu
-          default-active="2"
+          :default-active="this.$route.path"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose">
@@ -15,9 +15,9 @@
               <span>HTML</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-              <el-menu-item index="1-3">选项3</el-menu-item>
+              <el-menu-item index="/FrontEnd/HTML/HTML1">选项1</el-menu-item>
+              <el-menu-item index="/FrontEnd/HTML/HTML1">选项2</el-menu-item>
+              <el-menu-item index="/FrontEnd/Javascript">选项3</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">

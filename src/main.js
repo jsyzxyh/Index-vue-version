@@ -11,7 +11,7 @@ import Vuex from 'vuex'
 // 引入 axios
 import axios from 'axios'
 // 引入 vuex
-import store from './store.js'
+import store from './store'
 // 使用axios
 Vue.prototype.$axios = axios
 // 使用vuex

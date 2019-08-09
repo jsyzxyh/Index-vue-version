@@ -1,17 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
-import gift from '@/components/gift'
-import campusRecuit from '@/components/campusRecuit'
-import studyWeb from '@/components/studyWeb'
+import Index from '@/views/Index'
+import gift from '@/views/gift'
+import campusRecuit from '@/views/campusRecuit'
+import studyWeb from '@/views/studyWeb'
+// import Dashboard from '@/views/dashboard'
+import FrontEnd from '@/views/FrontEnd'
 import error from '@/components/error/error'
 import found404 from '@/components/error/404'
-import Html from '@/components/front/Html'
-import Css from '@/components/front/Css'
+import HTML from '@/components/front/Html'
+import CSS from '@/components/front/Css'
 import Javascript from '@/components/front/Javascript'
 import Network from '@/components/front/Network'
-import FrontEnd from '@/components/front/FrontEnd'
-import sidebar2 from '@/components/subcomponents/sidebar2.vue'
+import HTML1 from '@/views/HTML/HTML1'
+import HTML2 from '@/views/HTML/HTML2'
+import CSS1 from '@/views/CSS/CSS1'
+import CSS2 from '@/views/CSS/CSS2'
+import ES6 from '@/views/JS/ES6'
+import This from '@/views/JS/This'
+import Network1 from '@/views/Network/Network1'
+import Network2 from '@/views/Network/Network2'
 Vue.use(Router)
 
 export default new Router({
@@ -39,56 +47,75 @@ export default new Router({
     {
       path: '/FrontEnd',
       name: 'FrontEnd',
+      // redirect: '/dashboard',
       component: FrontEnd,
-      menuShow: true,
       children: [
         {
-          path: '/FrontEnd/Html',
-          component: {
-            default: Html,
-            aside: sidebar2
-          },
-          name: 'HTML', // 当前路由的name
-          leaf: true, // 只有一个节点
-          menuShow: true,
+          name: 'HTML',
+          path: 'HTML',
+          component: HTML,
           children: [
-            { path: '/Html/info', component: Html, name: 'HTML要点', menuShow: true }
+            {
+              name: 'HTML1',
+              path: 'HTML1',
+              component: HTML1
+            },
+            {
+              name: 'HTML2',
+              path: 'HTML2',
+              component: HTML2
+            }
           ]
         },
         {
-          path: '/FrontEnd/Css',
-          component: {
-            default: Html,
-            aside: sidebar2
-          },
-          name: 'CSS', // 当前路由的name
-          menuShow: true,
+          name: 'CSS',
+          path: 'CSS',
+          component: CSS,
           children: [
-            { path: '/Css/info', component: Css, name: 'CSS要点', menuShow: true }
+            {
+              name: 'CSS1',
+              path: 'CSS1',
+              component: CSS1
+            },
+            {
+              name: 'CSS2',
+              path: 'CSS2',
+              component: CSS2
+            }
           ]
         },
         {
-          path: '/FrontEnd/Javascript',
-          component: {
-            default: Html,
-            aside: sidebar2
-          },
-          name: 'Javascript', // 当前路由的name
-          menuShow: true,
+          name: 'Javascript',
+          path: 'Javascript',
+          component: Javascript,
           children: [
-            { path: '/Javascript/info', component: Javascript, name: 'JS要点', menuShow: true }
+            {
+              name: 'ES6',
+              path: 'ES6',
+              component: ES6
+            },
+            {
+              name: 'This',
+              path: 'This',
+              component: This
+            }
           ]
         },
         {
-          path: '/FrontEnd/Network',
-          component: {
-            default: Html,
-            aside: sidebar2
-          },
-          name: 'Network', // 当前路由的name
-          menuShow: true,
+          name: 'Network',
+          path: 'Network',
+          component: Network,
           children: [
-            { path: '/Network/info', component: Network, name: '网络要点', menuShow: true }
+            {
+              name: 'Network1',
+              path: 'Network1',
+              component: Network1
+            },
+            {
+              name: 'Network2',
+              path: 'Network2',
+              component: Network2
+            }
           ]
         }
       ]

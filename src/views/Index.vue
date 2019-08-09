@@ -22,7 +22,7 @@ export default {
       rules: {
         name: [
           { required: true, message: '请输入你的名字', trigger: 'blur' },
-          { min: 2, max: 5, message: '长度在 2 到 6 个字', trigger: 'blur' }
+          { min: 2, max: 6, message: '长度在 2 到 6 个字', trigger: 'blur' }
         ]
       }
     }

@@ -1,12 +1,17 @@
+/**
+ * Created by yqr on 2018/3/26.
+ */
 import Vue from 'vue'
 import Vuex from 'vuex'
+
 Vue.use(Vuex)
 
 const state = {
-  collapsed: false, // 左侧导航折叠状态
-  // topNavState: 'home',
-  leftNavState: 'dispatch'
+  collapsed: false,
+  topNavState: 'home',
+  leftNavState: 'home'
 }
+
 export default new Vuex.Store({
   state
 })

@@ -1,7 +1,6 @@
 <template>
   <div>
-    html
-    <el-button type="success" @click="backToLast">返回</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
