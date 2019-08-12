@@ -45,6 +45,10 @@ export default {
           url: 'https://talent.baidu.com/external/baidu/campus.html#/jobList/0-1227-10002'
         },
         {
+          name: '京东校园招聘',
+          url: 'http://campus.jd.com/web/job/job_index?t=6'
+        },
+        {
           name: '拼多多校园招聘',
           url: 'https://www.pinduoduo.com/home/campus/'
         },

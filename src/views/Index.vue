@@ -2,10 +2,12 @@
   <div class="index_form">
     <el-form :model="Form" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
       <el-form-item label="输入姓名" prop="name">
-        <el-input v-model="Form.name" style="width: 200px;" maxlength="6" minlength="2"></el-input>
+        <el-input v-model="Form.name" style="width: 200px;" maxlength="6" minlength="2" @keyup.enter.native="submitForm('ruleForm')"></el-input>
+        <!-- <input type="text"> -->
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm('ruleForm')">确认</el-button>
+        <Input v-show="false"/>
       </el-form-item>
     </el-form>
   </div>
@@ -44,7 +46,7 @@ export default {
                 path: '/gift'
               })
             } else if (data.data === 'study') {
-              console.log('study')
+              // console.log('study')
               this.$router.push({
                 path: '/campusRecuit'
               })

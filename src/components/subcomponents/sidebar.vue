@@ -1,97 +1,74 @@
 <template>
-  <div class="front_end_siderbar">
-    <el-row class="tac">
-      <el-col :span="3">
-        <el-menu
-          :default-active="this.$route.path"
-          class="el-menu-vertical-demo"
-          @open="handleOpen"
-          @close="handleClose">
-          <el-menu-item index="0">
-            <span slot="title">知识梳理</span>
-          </el-menu-item>
-          <el-submenu index="1">
-            <template slot="title">
-              <span>HTML</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="/FrontEnd/HTML/HTML1">选项1</el-menu-item>
-              <el-menu-item index="/FrontEnd/HTML/HTML1">选项2</el-menu-item>
-              <el-menu-item index="/FrontEnd/Javascript">选项3</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="2">
-            <template slot="title">
-              <span>CSS</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="2-1">选项1</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
-              <el-menu-item index="2-3">选项3</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="3">
-            <template slot="title">
-              <span>Javascript</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="3-1">选项1</el-menu-item>
-              <el-menu-item index="3-2">选项2</el-menu-item>
-              <el-menu-item index="3-3">选项3</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="4">
-            <template slot="title">
-              <span>Vue</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="4-1">选项1</el-menu-item>
-              <el-menu-item index="4-2">选项2</el-menu-item>
-              <el-menu-item index="4-3">选项3</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-        </el-menu>
-      </el-col>
-    </el-row>
-  </div>
+<el-aside class="leftBar" width="250px">
+  <el-menu router>
+    <el-menu-item index="/FrontEnd">
+      <span slot="title" style="font-size:18px;">知识梳理</span>
+    </el-menu-item>
+    <el-submenu index="1">
+      <template slot="title">HTML</template>
+      <el-menu-item-group>
+        <el-menu-item index="/FrontEnd/HTML/HTML1">HTML1</el-menu-item>
+        <el-menu-item index="/FrontEnd/HTML/HTML2">HTML2</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="2">
+      <template slot="title">CSS</template>
+      <el-menu-item-group>
+        <el-menu-item index="/FrontEnd/CSS/CSS1">CSS1</el-menu-item>
+        <el-menu-item index="/FrontEnd/CSS/CSS2">CSS2</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="3">
+      <template slot="title">Javascript</template>
+      <el-menu-item-group>
+        <el-menu-item index="/FrontEnd/Javascript/ES6">ES6</el-menu-item>
+        <el-menu-item index="/FrontEnd/Javascript/This">This</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="4">
+      <template slot="title">Network</template>
+      <el-menu-item-group>
+        <el-menu-item index="/FrontEnd/Network/Network1">Network1</el-menu-item>
+        <el-menu-item index="/FrontEnd/Network/Network2">Network2</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+  </el-menu>
+</el-aside>
 </template>
-
 <script>
 export default {
+  name: 'sidebar2',
   data () {
-    return {}
+    return {
+      loading: false,
+      collapsed: this.$store.state.collapsed
+    }
   },
   methods: {
-    handleOpen (key, keyPath) {
-      console.log(key, keyPath)
-    },
-    handleClose (key, keyPath) {
-      console.log(key, keyPath)
+  },
+  watch: {
+    '$route': function (to, from) {
+      // 路由改变时执行
+      console.info('to.path:' + to.path)
     }
   }
 }
 </script>
 
 <style lang="scss">
-.front_end_siderbar{
-  height:100%;
-  .tac.el-row{
-    .el-col{
-      .el-menu-vertical-demo{
-        height: 100%;
-      }
-      ul{
-        li{
-          font-size: 18px;
-          .el-submenu__title{
-            font-size: 18px;
-          }
-        }
+.leftBar{
+  width: 150px;
+  border-right: 1px solid #ebeef5;
+  .el-menu{
+    .el-menu-item-group{
+      .el-menu-item-group__title{
+        display: none;
+        height:0;
       }
     }
-  }
-  .back{
-    margin-top: 20px;
+    .el-submenu__title{
+      font-size:17px;
+    }
   }
 }
 </style>
