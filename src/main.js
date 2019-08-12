@@ -6,15 +6,19 @@ import router from './router'
 // 引入Element-UI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 引入prismjs
+import Prism from 'prismjs'
 // 引入 vuex
 import Vuex from 'vuex'
 // 引入 axios
 import axios from 'axios'
 // 引入 vuex
 import store from './store'
-// 使用axios
+// 使用 prismjs
+Prism.highlightAll()
+// 使用 axios
 Vue.prototype.$axios = axios
-// 使用vuex
+// 使用 vuex
 Vue.use(Vuex)
 
 Vue.config.productionTip = false

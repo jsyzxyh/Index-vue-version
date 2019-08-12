@@ -72,16 +72,20 @@ export default {
           url: '/FrontEnd'
         },
         {
-          name: 'HTML and CSS',
-          url: '/HtmlCss'
+          name: 'HTML',
+          url: '/FrontEnd/HTML'
+        },
+        {
+          name: 'CSS',
+          url: '/FrontEnd/CSS'
         },
         {
           name: 'Javascript',
-          url: '/Javascript'
+          url: '/FrontEnd/Javascript'
         },
         {
           name: '网络基础',
-          url: '/Network'
+          url: '/FrontEnd/Network'
         }
       ]
     }

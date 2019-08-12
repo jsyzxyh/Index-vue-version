@@ -26,6 +26,7 @@ export default {
 .html_index{
   text-align: left;
   font-size: 20px;
+  width: 900px;
   p{
     margin: 15px 0;
   }

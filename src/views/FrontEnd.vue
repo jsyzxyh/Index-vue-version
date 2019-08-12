@@ -4,7 +4,8 @@
       <sidebar/>
       <el-container>
         <el-main>
-          <router-view></router-view>
+          <!-- <div class="frontEnd_konwledge"><h2>知识梳理</h2></div> -->
+          <router-view class="main"></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -17,14 +18,7 @@ import sidebar from '@/components/subcomponents/sidebar.vue'
 export default {
   name: 'FrontEnd',
   data () {
-    const item = {
-      date: '2016-05-02',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1518 弄'
-    }
-    return {
-      tableData: Array(20).fill(item)
-    }
+    return {}
   },
   methods: {
     backToLast () {
@@ -43,8 +37,25 @@ export default {
   color: #333;
   line-height: 60px;
 }
-
 .el-aside {
   color: #333;
+}
+.frontEnd_konwledge{
+  text-align: left;
+}
+.el-main{
+  width: 900px;
+  .main{
+    width: 900px;
+    margin-left: 30px;
+  }
+}
+pre[class*="language-"]{
+  font-size: 14px;
+  padding: 0;
+  border: .1em solid hsl(0, 0%, 33%);
+  code[class*="language-"]{
+    line-height: 0.5em;
+  }
 }
 </style>
