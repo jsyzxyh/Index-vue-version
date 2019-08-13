@@ -1,6 +1,6 @@
 <template>
 <el-aside class="leftBar" width="250px">
-  <el-menu router>
+  <el-menu :default-active="nowRouter" router>
     <el-menu-item index="/FrontEnd">
       <span slot="title" style="font-size:18px;">知识梳理</span>
     </el-menu-item>
@@ -41,15 +41,19 @@ export default {
   data () {
     return {
       loading: false,
-      collapsed: this.$store.state.collapsed
+      collapsed: this.$store.state.collapsed,
+      nowRouter: ''
     }
+  },
+  created () {
+    this.nowRouter = this.$route.path
   },
   methods: {
   }
   // watch: {
   //   '$route': function (to, from) {
   //     // 路由改变时执行
-  //     console.info('to.path:' + to.path)
+  //     this.nowRouter = to.path
   //   }
   // }
 }

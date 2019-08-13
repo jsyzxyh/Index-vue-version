@@ -68,24 +68,20 @@ export default {
       ],
       frontPage: [
         {
-          name: '前端知识',
-          url: '/FrontEnd'
-        },
-        {
           name: 'HTML',
-          url: '/FrontEnd/HTML'
+          url: '/FrontEnd/HTML/HTML1'
         },
         {
           name: 'CSS',
-          url: '/FrontEnd/CSS'
+          url: '/FrontEnd/CSS/CSS1'
         },
         {
           name: 'Javascript',
-          url: '/FrontEnd/Javascript'
+          url: '/FrontEnd/Javascript/letConst'
         },
         {
           name: '网络基础',
-          url: '/FrontEnd/Network'
+          url: '/FrontEnd/Network/Network1'
         }
       ]
     }

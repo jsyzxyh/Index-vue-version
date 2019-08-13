@@ -133,7 +133,7 @@ b.call(a,100,200); // Jack 300`,
       `var a = {
     name:"Jack",
     fn:function(){
-        console.log(this.name); //追梦子
+        console.log(this.name);
     }
 }
 var b = a.fn;

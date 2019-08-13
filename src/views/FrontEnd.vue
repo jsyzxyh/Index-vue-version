@@ -4,7 +4,14 @@
       <sidebar/>
       <el-container>
         <el-main>
-          <!-- <div class="frontEnd_konwledge"><h2>知识梳理</h2></div> -->
+          <div class="return_btn" v-if="!indexShow">
+            <el-button @click="back">返回</el-button>
+          </div>
+          <div class="frontEnd_konwledge" v-if="indexShow">
+            <h2>知识梳理</h2>
+            <p>前端重要知识点整理</p>
+            <p>主要来源：自己总结以及网络</p>
+          </div>
           <router-view class="main"></router-view>
         </el-main>
       </el-container>
@@ -18,11 +25,23 @@ import sidebar from '@/components/subcomponents/sidebar.vue'
 export default {
   name: 'FrontEnd',
   data () {
-    return {}
+    return {
+    }
   },
   methods: {
-    backToLast () {
-      this.$router.go(-1)
+    back () {
+      this.$router.push({
+        path: '/studyWeb'
+      })
+    }
+  },
+  computed: {
+    indexShow: function () {
+      if (this.$route.path === '/FrontEnd') {
+        return true
+      } else {
+        return false
+      }
     }
   },
   components: {
@@ -42,9 +61,25 @@ export default {
 }
 .frontEnd_konwledge{
   text-align: left;
+  padding: 20px;
+  p{
+    font-size: 16px;
+    margin: 15px 0;
+  }
 }
 .el-main{
   width: 900px;
+  position:relative;
+  .return_btn{
+    .el-button{
+      position: relative;
+      left:80px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+
   .main{
     width: 900px;
     margin-left: 30px;
