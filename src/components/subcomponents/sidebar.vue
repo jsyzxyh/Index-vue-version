@@ -21,7 +21,7 @@
     <el-submenu index="3">
       <template slot="title">Javascript</template>
       <el-menu-item-group>
-        <el-menu-item index="/FrontEnd/Javascript/ES6">ES6</el-menu-item>
+        <el-menu-item index="/FrontEnd/Javascript/letConst">let和const</el-menu-item>
         <el-menu-item index="/FrontEnd/Javascript/This">This</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
@@ -45,13 +45,13 @@ export default {
     }
   },
   methods: {
-  },
-  watch: {
-    '$route': function (to, from) {
-      // 路由改变时执行
-      console.info('to.path:' + to.path)
-    }
   }
+  // watch: {
+  //   '$route': function (to, from) {
+  //     // 路由改变时执行
+  //     console.info('to.path:' + to.path)
+  //   }
+  // }
 }
 </script>
 

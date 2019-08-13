@@ -50,12 +50,21 @@ export default {
     margin-left: 30px;
   }
 }
-pre[class*="language-"]{
-  font-size: 14px;
-  padding: 0;
+pre{
+  border-radius: 6px;
   border: .1em solid hsl(0, 0%, 33%);
-  code[class*="language-"]{
-    line-height: 0.5em;
+  code{
+    font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
   }
+  .javascript.hljs{
+    padding:10px 15px;
+    line-height: 1.5em;
+  }
+}
+h2,h3{
+  margin: 8px 0;
+}
+p{
+  font-size: 15px
 }
 </style>

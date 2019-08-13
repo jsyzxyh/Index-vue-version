@@ -7,15 +7,16 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // 引入prismjs
-import Prism from 'prismjs'
+// import Prism from 'prismjs'
 // 引入 vuex
 import Vuex from 'vuex'
 // 引入 axios
 import axios from 'axios'
 // 引入 vuex
 import store from './store'
-// 使用 prismjs
-Prism.highlightAll()
+import VueHighlightJS from 'vue-highlightjs'
+import 'highlight.js/styles/atom-one-dark.css'
+Vue.use(VueHighlightJS)
 // 使用 axios
 Vue.prototype.$axios = axios
 // 使用 vuex

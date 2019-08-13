@@ -16,7 +16,7 @@ import HTML1 from '@/views/HTML/HTML1'
 import HTML2 from '@/views/HTML/HTML2'
 import CSS1 from '@/views/CSS/CSS1'
 import CSS2 from '@/views/CSS/CSS2'
-import ES6 from '@/views/JS/ES6'
+import letConst from '@/views/JS/letConst'
 import This from '@/views/JS/This'
 import Network1 from '@/views/Network/Network1'
 import Network2 from '@/views/Network/Network2'
@@ -91,9 +91,9 @@ export default new Router({
           component: Javascript,
           children: [
             {
-              name: 'ES6',
-              path: 'ES6',
-              component: ES6
+              name: 'letConst',
+              path: 'letConst',
+              component: letConst
             },
             {
               name: 'This',
