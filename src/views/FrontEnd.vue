@@ -79,10 +79,16 @@ export default {
       }
     }
   }
-
   .main{
     width: 900px;
+    text-align: left;
     margin-left: 30px;
+    h2,h3{
+      line-height: 2.3rem;
+    }
+    p{
+      line-height: 2rem;
+    }
   }
 }
 pre{

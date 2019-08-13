@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div class="network_index">
-      <p>网络基础</p>
-    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -22,11 +19,5 @@ export default {
 </script>
 
 <style lang="scss">
-.network_index{
-  text-align: left;
-  font-size: 20px;
-  p{
-    margin: 15px 0;
-  }
-}
+
 </style>
