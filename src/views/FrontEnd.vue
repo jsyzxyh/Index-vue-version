@@ -88,6 +88,7 @@ export default {
     }
     p{
       line-height: 2rem;
+      margin: 0.6rem 0;
     }
   }
 }

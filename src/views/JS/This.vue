@@ -6,7 +6,7 @@
     <p>默认this指向全局window，普通函数调用也指向window</p>
     <p>构造函数调用，this都指向new出来的对象。</p>
     <p>bind,call,apply可以改变this指向</p>
-    <pre v-highlightjs="this1"><code class="javascript">{{ this1 }}</code></pre>
+    <pre v-highlightjs="this1"><code class="javascript"></code></pre>
     <h3>2.2 ES6箭头函数</h3>
     <p>箭头函数有几个使用注意点。</p>
     <p>（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。</p>

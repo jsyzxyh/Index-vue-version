@@ -15,7 +15,7 @@
       <template slot="title">CSS</template>
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/CSS/CSS1">css选择器</el-menu-item>
-        <el-menu-item index="/FrontEnd/CSS/CSS2">垂直居中</el-menu-item>
+        <el-menu-item index="/FrontEnd/CSS/CSS2">垂直水平居中</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="3">

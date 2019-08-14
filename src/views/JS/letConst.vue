@@ -29,13 +29,13 @@ export default {
 a // ReferenceError: a is not defined.
 b // 1`,
       let_example1:
-      `for (let i = 0; i &lt; 5; i++) {
+      `for (let i = 0; i < 5; i++) {
   setTimeout(function() {
       console.log(i);
   }, 0);
 }
 // 5 5 5 5 5
-for (let i = 0; i &lt; 5; i++) {
+for (let i = 0; i < 5; i++) {
   setTimeout(function() {
       console.log(i);
   }, 0);

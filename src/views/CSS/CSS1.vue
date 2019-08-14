@@ -1,5 +1,5 @@
 <template>
-  <div class="center">
+  <div class="selector">
     <h2>一、css选择器</h2>
     <h3>1.1 css选择器</h3>
     <el-table
