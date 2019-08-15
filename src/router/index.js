@@ -16,6 +16,7 @@ import HTML1 from '@/views/HTML/HTML1'
 import HTML2 from '@/views/HTML/HTML2'
 import CSS1 from '@/views/CSS/CSS1'
 import CSS2 from '@/views/CSS/CSS2'
+import CSS3 from '@/views/CSS/CSS3'
 import letConst from '@/views/JS/letConst'
 import This from '@/views/JS/This'
 import Network1 from '@/views/Network/Network1'
@@ -82,6 +83,11 @@ export default new Router({
               name: 'CSS2',
               path: 'CSS2',
               component: CSS2
+            },
+            {
+              name: 'CSS3',
+              path: 'CSS3',
+              component: CSS3
             }
           ]
         },

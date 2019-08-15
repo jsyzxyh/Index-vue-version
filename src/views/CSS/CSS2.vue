@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import center from '@/assets/images/垂直居中.png'
+import center from '@/assets/images/css/垂直居中.png'
 export default {
   name: 'CSS2',
   data () {
