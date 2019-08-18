@@ -25,11 +25,7 @@ export default {
           url: 'https://campus.alibaba.com/positionList.htm'
         },
         {
-          name: '美团校园招聘',
-          url: 'https://campus.meituan.com/jobs?jobType=1'
-        },
-        {
-          name: 'Bilibili校园招聘',
+          name: 'bilibili校园招聘',
           url: 'https://app.mokahr.com/campus_apply/bilibili01/6205#/?anchorName=default_joblist&sourceToken=&_k=smvfpv'
         },
         {
@@ -45,16 +41,28 @@ export default {
           url: 'https://talent.baidu.com/external/baidu/campus.html#/jobList/0-1227-10002'
         },
         {
-          name: '京东校园招聘',
-          url: 'http://campus.jd.com/web/job/job_index?t=6'
-        },
-        {
           name: '拼多多校园招聘',
           url: 'https://www.pinduoduo.com/home/campus/'
         },
         {
           name: '字节跳动校园招聘',
           url: 'https://job.bytedance.com/campus/position'
+        },
+        {
+          name: '京东校园招聘',
+          url: 'http://campus.jd.com/web/job/job_index?t=6&dicCode=jfx04001&dicName=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%B1%BB'
+        },
+        {
+          name: '美团点评校园招聘',
+          url: 'https://campus.meituan.com/jobs?interviewCity=34&jobFamily=1&jobType=1&pageNo=1&workCity=001009'
+        },
+        {
+          name: '爱奇艺校园招聘',
+          url: 'http://zhaopin.iqiyi.com/job-school.html'
+        },
+        {
+          name: '小红书校园招聘',
+          url: 'https://campus.xiaohongshu.com/jobs?type=1'
         },
         {
           name: '流利说校园招聘',
@@ -65,7 +73,7 @@ export default {
   },
   methods: {
     search () {
-      const url = `https://www.baidu.com/s?wd=${this.searchInput}`
+      const url = `https://www.baidu.com/s?wd=${this.searcchInput}`
       window.open(url)
     },
     showInfo () {
@@ -113,6 +121,7 @@ export default {
   .recruitWeb .el-button{
     margin-top: 25px;
     font-size: 18px;
+    margin-bottom: 100px;
   }
 }
 </style>
