@@ -18,8 +18,9 @@ import CSS1 from '@/views/CSS/CSS1'
 import CSS2 from '@/views/CSS/CSS2'
 import CSS3 from '@/views/CSS/CSS3'
 import CSS4 from '@/views/CSS/CSS4'
-import letConst from '@/views/JS/letConst'
-import This from '@/views/JS/This'
+import JS1 from '@/views/JS/JS1'
+import JS2 from '@/views/JS/JS2'
+import JS3 from '@/views/JS/JS3'
 import Network1 from '@/views/Network/Network1'
 import Network2 from '@/views/Network/Network2'
 Vue.use(Router)
@@ -105,12 +106,17 @@ export default new Router({
             {
               name: 'letConst',
               path: 'letConst',
-              component: letConst
+              component: JS1
             },
             {
               name: 'This',
               path: 'This',
-              component: This
+              component: JS2
+            },
+            {
+              name: 'debounseAndThrottle',
+              path: 'debounseAndThrottle',
+              component: JS3
             }
           ]
         },

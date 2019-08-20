@@ -25,6 +25,7 @@
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/Javascript/letConst">let和const</el-menu-item>
         <el-menu-item index="/FrontEnd/Javascript/This">This</el-menu-item>
+        <el-menu-item index="/FrontEnd/Javascript/debounseAndThrottle">防抖和节流</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="4">
