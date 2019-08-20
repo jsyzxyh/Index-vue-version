@@ -17,6 +17,7 @@ import HTML2 from '@/views/HTML/HTML2'
 import CSS1 from '@/views/CSS/CSS1'
 import CSS2 from '@/views/CSS/CSS2'
 import CSS3 from '@/views/CSS/CSS3'
+import CSS4 from '@/views/CSS/CSS4'
 import letConst from '@/views/JS/letConst'
 import This from '@/views/JS/This'
 import Network1 from '@/views/Network/Network1'
@@ -88,6 +89,11 @@ export default new Router({
               name: 'CSS3',
               path: 'CSS3',
               component: CSS3
+            },
+            {
+              name: 'CSS4',
+              path: 'CSS4',
+              component: CSS4
             }
           ]
         },

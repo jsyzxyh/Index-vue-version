@@ -17,6 +17,7 @@
         <el-menu-item index="/FrontEnd/CSS/CSS1">css选择器</el-menu-item>
         <el-menu-item index="/FrontEnd/CSS/CSS2">垂直水平居中</el-menu-item>
         <el-menu-item index="/FrontEnd/CSS/CSS3">清除浮动</el-menu-item>
+        <el-menu-item index="/FrontEnd/CSS/CSS4">滚动页面固定顶部</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="3">

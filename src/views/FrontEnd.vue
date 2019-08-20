@@ -109,6 +109,7 @@ export default {
 pre{
   border-radius: 6px;
   border: .1em solid hsl(0, 0%, 33%);
+  width: 700px;
   code{
     font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="center">
+  <div class="float">
     <h2>三、css清除浮动</h2>
     <h3>3.1 浮动的产生</h3>
     <p>最外层的outer没有设置高度，此时当内层元素浮动后，就出现了一下影响：
