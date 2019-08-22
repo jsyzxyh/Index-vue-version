@@ -18,6 +18,12 @@ import CSS1 from '@/views/CSS/CSS1'
 import CSS2 from '@/views/CSS/CSS2'
 import CSS3 from '@/views/CSS/CSS3'
 import CSS4 from '@/views/CSS/CSS4'
+import CSS5 from '@/views/CSS/CSS5'
+import CSS5_1 from '@/views/CSS/CSS5-1'
+import CSS5_2 from '@/views/CSS/CSS5-2'
+import CSS6_1 from '@/views/CSS/CSS6-1'
+import CSS6_2 from '@/views/CSS/CSS6-2'
+import CSS6 from '@/views/CSS/CSS6'
 import JS1 from '@/views/JS/JS1'
 import JS2 from '@/views/JS/JS2'
 import JS3 from '@/views/JS/JS3'
@@ -47,6 +53,26 @@ export default new Router({
       path: '/studyWeb',
       name: 'studyWeb',
       component: studyWeb
+    },
+    {
+      path: '/CSS5_1',
+      name: 'CSS5_1',
+      component: CSS5_1
+    },
+    {
+      path: '/CSS5_2',
+      name: 'CSS5_2',
+      component: CSS5_2
+    },
+    {
+      path: '/CSS6_1',
+      name: 'CSS6_1',
+      component: CSS6_1
+    },
+    {
+      path: '/CSS6_2',
+      name: 'CSS6_2',
+      component: CSS6_2
     },
     {
       path: '/FrontEnd',
@@ -95,6 +121,16 @@ export default new Router({
               name: 'CSS4',
               path: 'CSS4',
               component: CSS4
+            },
+            {
+              name: 'CSS5',
+              path: 'CSS5',
+              component: CSS5
+            },
+            {
+              name: 'CSS6',
+              path: 'CSS6',
+              component: CSS6
             }
           ]
         },
