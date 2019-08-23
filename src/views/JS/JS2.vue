@@ -7,6 +7,9 @@
     <p>构造函数调用，this都指向new出来的对象。</p>
     <p>bind,call,apply可以改变this指向</p>
     <pre v-highlightjs="this1"><code class="javascript"></code></pre>
+    <p><b>以下例子注意</b>，obj.getName()()执行时，this指向全局，不是obj。</p>
+    <p>可以理解为(obj.getName())()，obj.getName()是一个整体，obj.getName()()是执行obj.getName()函数，返回的是全局的name</p>
+    <pre v-highlightjs="this2"><code class="javascript"></code></pre>
     <h3>2.2 ES6箭头函数</h3>
     <p>箭头函数有几个使用注意点。</p>
     <p>（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
@@ -78,6 +81,18 @@ fn1.name='cn';
 console.log(fn1.name);//cn
 let fn2=new Func();
 console.log(fn2.name)//111`,
+      this2:
+      `var name = 'Jack'
+var obj = {
+  name: 'Tom',
+  getName: function() {
+    return function(){
+      var name='aaa'
+      return this.name
+    }
+  }
+}
+console.log(obj.getName()()) // Jack`,
       this_arrow:
       `function foo() {
   setTimeout(() => {

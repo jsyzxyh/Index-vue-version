@@ -7,8 +7,8 @@
     <el-submenu index="1">
       <template slot="title">HTML</template>
       <el-menu-item-group>
-        <el-menu-item index="/FrontEnd/HTML/HTML1">HTML1</el-menu-item>
-        <el-menu-item index="/FrontEnd/HTML/HTML2">HTML2</el-menu-item>
+        <el-menu-item index="/FrontEnd/HTML/HTML1">HTML5新特性</el-menu-item>
+        <el-menu-item index="/FrontEnd/HTML/HTML2">块级元素和行级元素</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="2">
