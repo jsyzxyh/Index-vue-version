@@ -20,6 +20,8 @@
     <pre v-highlightjs="this_arrow"><code class="javascript"></code></pre>
     <p>上面代码中，setTimeout的参数是一个箭头函数，这个箭头函数的定义生效是在foo函数生成时，而它的真正执行要等到 100 毫秒后。如果是普通函数，
       执行时this应该指向全局对象window，这时应该输出21。但是，箭头函数导致this总是指向函数定义生效时所在的对象（本例是{id: 42}），所以输出的是42。</p>
+    <pre v-highlightjs="this3"><code class="javascript"></code></pre>
+    <p>将2.1的代码改成箭头函数，结果输出是Tom，因为此时箭头函数将作用域改成了定义时的作用域，即obj</p>
     <h3>2.3 改变this指向的方法1: bind</h3>
     <p>obj1.bind(obj2)将this从obj1转移到了obj2</p>
     <p>bind方法返回的是一个修改过后的函数。bind也可以有多个参数，并且参数可以执行的时候再次添加，但是要注意的是，参数是按照形参的顺序进行的。</p>
@@ -93,6 +95,19 @@ var obj = {
   }
 }
 console.log(obj.getName()()) // Jack`,
+      this3:
+      `var name='Jack'
+obj={
+  name:"Tom",
+  getName: function(){
+    return () => {
+      var name='aaa'
+      return this.name
+    }
+  }
+}
+var ans = obj.getName()()
+console.log(ans) // Tom`,
       this_arrow:
       `function foo() {
   setTimeout(() => {

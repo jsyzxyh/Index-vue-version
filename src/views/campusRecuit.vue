@@ -6,7 +6,11 @@
         <el-button type="primary" @click="search">百度搜索</el-button>
       </div>
       <div class="recruitWeb">
-        <a style="font-size:22px" v-for="(item) in jobWeb" :key="item.url" :href="item.url" target="_blank">{{ item.name }}</a>
+        <div class="url" v-for="(item) in jobWeb" :key="item.url">
+          <a style="font-size:22px" :href="item.url" target="_blank">{{ item.name }}</a>
+        </div>
+      </div>
+      <div class="btns">
         <el-button type="success" @click="showInfo">学习资料</el-button>
         <el-button @click="backToHome">返回主页</el-button>
       </div>
@@ -67,6 +71,30 @@ export default {
         {
           name: '流利说校园招聘',
           url: 'https://app.mokahr.com/campus_apply/liulishuo/2402#/jobs?zhineng=10814&_k=fkebc1'
+        },
+        {
+          name: '360校园招聘',
+          url: 'http://campus.chinahr.com/views/2020-qihu360/job_intern.html'
+        },
+        {
+          name: '平安银行校园招聘',
+          url: 'http://campus.pingan.com/freshGraduates?keyWord=%E5%89%8D%E7%AB%AF'
+        },
+        {
+          name: '中国农业银行校园招聘',
+          url: 'https://career.abchina.com/build/index.html#/99'
+        },
+        {
+          name: 'IBM校园招聘',
+          url: 'https://campus.liepin.com/xycompany/v170863/'
+        },
+        {
+          name: '寒武纪校园招聘',
+          url: 'https://app.mokahr.com/campus_apply/cambricon/1112#/jobs?zhineng=18576&location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&_k=ai5tvw'
+        },
+        {
+          name: '云从科技校园招聘',
+          url: 'http://campus.cloudwalk.cn/#/jobs?zhineng=17641&location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&keyword=&_k=oua0w9'
         }
       ]
     }
@@ -93,7 +121,7 @@ export default {
 <style lang="scss">
 .website{
   position: absolute;
-  width: 500px;
+  width: 100%;
   left: 0;
   right: 0;
   font-size: 22px;
@@ -118,7 +146,16 @@ export default {
     color: blue;
     text-decoration:underline
   }
-  .recruitWeb .el-button{
+  .recruitWeb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 150px;
+    .url{
+      width: 350px;
+    }
+  }
+  .btns{
     margin-top: 25px;
     font-size: 18px;
     margin-bottom: 100px;
