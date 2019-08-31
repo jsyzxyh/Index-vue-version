@@ -156,9 +156,11 @@ export default {
     }
   }
   .btns{
-    margin-top: 25px;
-    font-size: 18px;
-    margin-bottom: 100px;
+    .el-button{
+      margin-top: 25px;
+      font-size: 18px;
+      margin-bottom: 100px;
+    }
   }
 }
 </style>
