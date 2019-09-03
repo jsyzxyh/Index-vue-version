@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-container style="height: 100%; border: 1px solid #eee">
+    <el-container style="height: 100%; border: 1px solid #eee;border-bottom:0px;">
       <sidebar/>
       <el-container>
         <el-main>

@@ -33,7 +33,7 @@
     <el-submenu index="4">
       <template slot="title">Network</template>
       <el-menu-item-group>
-        <el-menu-item index="/FrontEnd/Network/Network1">Network1</el-menu-item>
+        <el-menu-item index="/FrontEnd/Network/Network1">Web存储</el-menu-item>
         <el-menu-item index="/FrontEnd/Network/Network2">Network2</el-menu-item>
       </el-menu-item-group>
     </el-submenu>

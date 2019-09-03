@@ -1,34 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/views/Index'
-import gift from '@/views/gift'
-import campusRecuit from '@/views/campusRecuit'
-import studyWeb from '@/views/studyWeb'
-// import Dashboard from '@/views/dashboard'
-import FrontEnd from '@/views/FrontEnd'
-import error from '@/components/error/error'
-import found404 from '@/components/error/404'
-import HTML from '@/components/front/Html'
-import CSS from '@/components/front/Css'
-import Javascript from '@/components/front/Javascript'
-import Network from '@/components/front/Network'
-import HTML1 from '@/views/HTML/HTML1'
-import HTML2 from '@/views/HTML/HTML2'
-import CSS1 from '@/views/CSS/CSS1'
-import CSS2 from '@/views/CSS/CSS2'
-import CSS3 from '@/views/CSS/CSS3'
-import CSS4 from '@/views/CSS/CSS4'
-import CSS5 from '@/views/CSS/CSS5'
-import CSS5_1 from '@/views/CSS/CSS5-1'
-import CSS5_2 from '@/views/CSS/CSS5-2'
-import CSS6_1 from '@/views/CSS/CSS6-1'
-import CSS6_2 from '@/views/CSS/CSS6-2'
-import CSS6 from '@/views/CSS/CSS6'
-import JS1 from '@/views/JS/JS1'
-import JS2 from '@/views/JS/JS2'
-import JS3 from '@/views/JS/JS3'
-import Network1 from '@/views/Network/Network1'
-import Network2 from '@/views/Network/Network2'
+const Index = () => import('@/views/Index')
+const gift = () => import('@/views/gift')
+const campusRecuit = () => import('@/views/campusRecuit')
+const studyWeb = () => import('@/views/studyWeb')
+const FrontEnd = () => import('@/views/FrontEnd')
+const error = () => import('@/components/error/error')
+const found404 = () => import('@/components/error/404')
+const HTML = () => import('@/components/front/Html')
+const CSS = () => import('@/components/front/CSS')
+const Javascript = () => import('@/components/front/Javascript')
+const Network = () => import('@/components/front/Network')
+const HTML1 = () => import('@/views/HTML/HTML1')
+const HTML2 = () => import('@/views/HTML/HTML2')
+const CSS1 = () => import('@/views/CSS/CSS1')
+const CSS2 = () => import('@/views/CSS/CSS2')
+const CSS3 = () => import('@/views/CSS/CSS3')
+const CSS4 = () => import('@/views/CSS/CSS4')
+const CSS5 = () => import('@/views/CSS/CSS5')
+const CSS6 = () => import('@/views/CSS/CSS6')
+const CSS5_1 = () => import('@/views/CSS/CSS5-1')
+const CSS5_2 = () => import('@/views/CSS/CSS5-2')
+const CSS6_1 = () => import('@/views/CSS/CSS6-1')
+const CSS6_2 = () => import('@/views/CSS/CSS6-2')
+const JS1 = () => import('@/views/JS/JS1')
+const JS2 = () => import('@/views/JS/JS2')
+const JS3 = () => import('@/views/JS/JS3')
+const Network1 = () => import('@/views/Network/Network1')
+const Network2 = () => import('@/views/Network/Network2')
 Vue.use(Router)
 
 export default new Router({

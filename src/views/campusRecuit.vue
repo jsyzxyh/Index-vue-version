@@ -95,6 +95,14 @@ export default {
         {
           name: '云从科技校园招聘',
           url: 'http://campus.cloudwalk.cn/#/jobs?zhineng=17641&location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&keyword=&_k=oua0w9'
+        },
+        {
+          name: '中国移动咪咕校园招聘',
+          url: 'http://www.migu.cn/about/join/graduate/job/0/2/0.html'
+        },
+        {
+          name: '第三十二研究所校园招聘',
+          url: 'https://cetc.zhiye.com/campus?r=&p=1^1&c=3100&d=&k=#jlt'
         }
       ]
     }

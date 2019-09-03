@@ -97,7 +97,7 @@ var obj = {
 console.log(obj.getName()()) // Jack`,
       this3:
       `var name='Jack'
-obj={
+var obj={
   name:"Tom",
   getName: function(){
     return () => {
