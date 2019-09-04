@@ -1,18 +1,22 @@
 <template>
 <el-aside class="leftBar" width="250px">
-  <el-menu :default-active="nowRouter" router>
+  <el-menu :default-active="nowRouter" router :collapse="isCollapse">
     <el-menu-item index="/FrontEnd">
       <span slot="title" style="font-size:18px;">知识梳理</span>
     </el-menu-item>
     <el-submenu index="1">
-      <template slot="title">HTML</template>
+      <template slot="title">
+        <span slot="title">HTML</span>
+      </template>
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/HTML/HTML1">HTML5新特性</el-menu-item>
         <el-menu-item index="/FrontEnd/HTML/HTML2">块级元素和行级元素</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="2">
-      <template slot="title">CSS</template>
+      <template slot="title">
+        <span slot="title">CSS</span>
+      </template>
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/CSS/CSS1">css选择器</el-menu-item>
         <el-menu-item index="/FrontEnd/CSS/CSS2">垂直水平居中</el-menu-item>
@@ -23,7 +27,9 @@
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="3">
-      <template slot="title">Javascript</template>
+      <template slot="title">
+        <span slot="title">JS</span>
+      </template>
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/Javascript/letConst">let和const</el-menu-item>
         <el-menu-item index="/FrontEnd/Javascript/This">This</el-menu-item>
@@ -31,7 +37,9 @@
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="4">
-      <template slot="title">Network</template>
+      <template slot="title">
+        <span slot="title">网络</span>
+      </template>
       <el-menu-item-group>
         <el-menu-item index="/FrontEnd/Network/Network1">Web存储</el-menu-item>
         <el-menu-item index="/FrontEnd/Network/Network2">Network2</el-menu-item>
@@ -47,7 +55,8 @@ export default {
     return {
       loading: false,
       collapsed: this.$store.state.collapsed,
-      nowRouter: ''
+      nowRouter: '',
+      isCollapse: false
     }
   },
   created () {

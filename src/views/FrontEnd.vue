@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <el-container style="height: 100%; border: 1px solid #eee;border-bottom:0px;">
+  <div class="frontEnd">
+    <el-container>
       <sidebar/>
       <el-container>
         <el-main>
@@ -56,72 +56,81 @@ export default {
 </script>
 
 <style lang="scss">
-.el-header {
-  background-color: #B3C0D1;
-  color: #333;
-  line-height: 60px;
-}
-.el-aside {
-  color: #333;
-}
-.frontEnd_konwledge{
-  text-align: left;
-  padding: 20px;
-  p{
-    font-size: 16px;
-    margin: 15px 0;
+.frontEnd{
+  height: 100%;
+  width:100%;
+  .el-container{
+    height: 100%;
+    border: 1px solid #eee;
+    border-bottom:0px;
   }
-}
-.el-main{
-  width: 900px;
-  position:relative;
-  .return_btn{
-    .el-button{
-      position: relative;
-      left:20%;
-      span{
-        font-size: 16px;
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+  .el-aside {
+    color: #333;
+  }
+  .frontEnd_konwledge{
+    text-align: left;
+    padding: 20px;
+    p{
+      font-size: 16px;
+      margin: 15px 0;
+    }
+  }
+  .el-main{
+    width: 900px;
+    position:relative;
+    .return_btn{
+      .el-button{
+        position: relative;
+        left:20%;
+        span{
+          font-size: 16px;
+        }
       }
     }
-  }
-  .main{
-    width: 900px;
-    text-align: left;
-    margin-left: 30px;
-    h2,h3{
-      line-height: 2.3rem;
+    .main{
+      width: 900px;
+      text-align: left;
+      margin-left: 30px;
+      h2,h3{
+        line-height: 2.3rem;
+      }
+      p{
+        line-height: 2rem;
+        margin: 0.6rem 0;
+      }
     }
-    p{
-      line-height: 2rem;
-      margin: 0.6rem 0;
+    .up{
+      height: 100%;
+      width: 100%;
+      background-color: #f2f5f6;
+      box-shadow: 0 0 6px rgba(0,0,0, .12);
+      text-align: center;
+      line-height: 40px;
+      color: #1989fa;
     }
   }
-  .up{
-    height: 100%;
-    width: 100%;
-    background-color: #f2f5f6;
-    box-shadow: 0 0 6px rgba(0,0,0, .12);
-    text-align: center;
-    line-height: 40px;
-    color: #1989fa;
+  pre{
+    border-radius: 6px;
+    border: .1em solid hsl(0, 0%, 33%);
+    width: 700px;
+    code{
+      font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
+    }
+    .javascript.hljs{
+      padding:10px 15px;
+      line-height: 1.5em;
+    }
   }
-}
-pre{
-  border-radius: 6px;
-  border: .1em solid hsl(0, 0%, 33%);
-  width: 700px;
-  code{
-    font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
+  h2,h3{
+    margin: 8px 0;
   }
-  .javascript.hljs{
-    padding:10px 15px;
-    line-height: 1.5em;
+  p{
+    font-size: 15px
   }
-}
-h2,h3{
-  margin: 8px 0;
-}
-p{
-  font-size: 15px
 }
 </style>
