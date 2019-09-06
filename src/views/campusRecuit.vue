@@ -103,6 +103,30 @@ export default {
         {
           name: '第三十二研究所校园招聘',
           url: 'https://cetc.zhiye.com/campus?r=&p=1^1&c=3100&d=&k=#jlt'
+        },
+        {
+          name: '商汤校园招聘',
+          url: 'http://hr.sensetime.com/position/campus_search?channel=1&keyword=&brand=55&address=%E4%B8%8A%E6%B5%B7&occupation=145'
+        },
+        {
+          name: '东方财富校园招聘',
+          url: 'https://eastmoney.zhiye.com/campus?p=1^6#jlt'
+        },
+        {
+          name: '海康威视校园招聘',
+          url: 'http://campus.hikvision.com/alljob?r=&p=&c=3100&d=&k=#jlt'
+        },
+        {
+          name: '声网校园招聘',
+          url: 'https://app.mokahr.com/campus_apply/agora/6335#/jobs?zhineng=16869&location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&commitment=%E5%85%A8%E8%81%8C&_k=hviafu'
+        },
+        {
+          name: '贝壳找房校园招聘',
+          url: 'http://campus.ke.com/alljob?r=&p=&c=3100&d=&k=#jlt'
+        },
+        {
+          name: 'VMware校园招聘',
+          url: 'https://careers.vmware.com/search-jobs/Shanghai%2C%20CN/1567/4/1814991-1796231-1796236/31x22222/121x458061/50/2'
         }
       ]
     }
