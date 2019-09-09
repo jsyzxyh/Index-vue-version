@@ -4,7 +4,7 @@
       <div class="banner">
         <h1 class="bgh1">顶部区域</h1>
       </div>
-      <nav class="navbar">
+      <nav class="navbar" v-bind:class="{ sticky: classFix }">
         <ul>
           <li>数码产品</li>
           <li>生活家居</li>
@@ -35,9 +35,11 @@
 
 <script>
 export default {
-  name: 'CSS5_2',
+  name: 'CSS4_1',
   data () {
-    return {}
+    return {
+      classFix: false
+    }
   },
   mounted () {
     // handleScroll为页面滚动的监听回调
@@ -47,7 +49,11 @@ export default {
     handleScroll () {
       // 得到页面滚动的距离
       let scrollTop = document.documentElement.scrollTop
-      console.log(scrollTop)
+      if (scrollTop > 300) {
+        this.classFix = true
+      } else {
+        this.classFix = false
+      }
     },
     back () {
       this.$router.push({path: '/FrontEnd/CSS/CSS4'})

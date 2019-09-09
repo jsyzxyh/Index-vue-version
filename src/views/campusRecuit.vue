@@ -127,6 +127,34 @@ export default {
         {
           name: 'VMware校园招聘',
           url: 'https://careers.vmware.com/search-jobs/Shanghai%2C%20CN/1567/4/1814991-1796231-1796236/31x22222/121x458061/50/2'
+        },
+        {
+          name: '58同城校园招聘',
+          url: 'http://campus.58.com/jobs.html'
+        },
+        {
+          name: '招商银行校园招聘',
+          url: 'http://career.cloud.cmbchina.com/index.html#jobDetail?id=dcbceba1-b1bb-4e7b-b67d-f3ae34561d79&returnUrl=#jobList?id=96574F8D-C7ED-4772-AE7C-BAC896D190C1'
+        },
+        {
+          name: '上交所校园招聘',
+          url: 'https://campus.liepin.com/xycompany/170835/'
+        },
+        {
+          name: '广联达校园招聘',
+          url: 'http://campus.glodon.com/#/jobs?location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&_k=ufybe4'
+        },
+        {
+          name: '上海银行校园招聘',
+          url: 'https://bosc.zhiye.com/campus?k=&d=&c=&p=,3^10&PageIndex=1'
+        },
+        {
+          name: '虎扑校园招聘',
+          url: 'https://campus.liepin.com/xycompany/171003/'
+        },
+        {
+          name: '交通银行校园招聘',
+          url: 'https://job.bankcomm.com/queryPosition.do'
         }
       ]
     }
