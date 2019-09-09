@@ -17,6 +17,7 @@ const CSS1 = () => import('@/views/CSS/CSS1')
 const CSS2 = () => import('@/views/CSS/CSS2')
 const CSS3 = () => import('@/views/CSS/CSS3')
 const CSS4 = () => import('@/views/CSS/CSS4')
+const CSS4_1 = () => import('@/views/CSS/CSS4-1')
 const CSS5 = () => import('@/views/CSS/CSS5')
 const CSS6 = () => import('@/views/CSS/CSS6')
 const CSS5_1 = () => import('@/views/CSS/CSS5-1')
@@ -52,6 +53,11 @@ export default new Router({
       path: '/studyWeb',
       name: 'studyWeb',
       component: studyWeb
+    },
+    {
+      path: '/CSS4_1',
+      name: 'CSS4_1',
+      component: CSS4_1
     },
     {
       path: '/CSS5_1',

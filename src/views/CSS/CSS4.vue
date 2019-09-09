@@ -3,8 +3,9 @@
     <h2>四、滚动页面固定顶部栏</h2>
     <h3>4.1 目标</h3>
     <p>初始页面顶部是图片，然后是菜单栏，滚动页面后，顶部栏固定在顶端</p>
-    <img :src="scrollFixed1" class="img" alt="">
-    <img :src="scrollFixed2" class="img" alt="">
+    <el-button type="success" @click="staticTop">DEMO</el-button>
+    <!-- <img :src="scrollFixed1" class="img" alt=""> -->
+    <!-- <img :src="scrollFixed2" class="img" alt=""> -->
     <p>HTML排版</p>
     <pre v-highlightjs="html"><code class="html"></code></pre>
     <p>css样式</p>
@@ -15,14 +16,14 @@
 </template>
 
 <script>
-import scrollFixed1 from '@/assets/images/css/滚动固定1.jpg'
-import scrollFixed2 from '@/assets/images/css/滚动固定2.jpg'
+// import scrollFixed1 from '@/assets/images/css/滚动固定1.jpg'
+// import scrollFixed2 from '@/assets/images/css/滚动固定2.jpg'
 export default {
   name: 'CSS4',
   data () {
     return {
-      scrollFixed1,
-      scrollFixed2,
+      // scrollFixed1,
+      // scrollFixed2,
       html:
       `<div class="main">
     <header>
@@ -123,6 +124,11 @@ nav{
     $('.navbar').removeClass("sticky");
   }
 });`
+    }
+  },
+  methods: {
+    staticTop () {
+      this.$router.push('/CSS4_1')
     }
   }
 }
