@@ -24,6 +24,7 @@ const CSS5_1 = () => import('@/views/CSS/CSS5-1')
 const CSS5_2 = () => import('@/views/CSS/CSS5-2')
 const CSS6_1 = () => import('@/views/CSS/CSS6-1')
 const CSS6_2 = () => import('@/views/CSS/CSS6-2')
+const CSS7 = () => import('@/views/CSS/CSS7')
 const JS1 = () => import('@/views/JS/JS1')
 const JS2 = () => import('@/views/JS/JS2')
 const JS3 = () => import('@/views/JS/JS3')
@@ -136,6 +137,11 @@ export default new Router({
               name: 'CSS6',
               path: 'CSS6',
               component: CSS6
+            },
+            {
+              path: 'CSS7',
+              name: 'CSS7',
+              component: CSS7
             }
           ]
         },
