@@ -33,7 +33,7 @@ import axios from 'axios'
 // 引入 vuex
 import store from './store'
 import VueHighlightJS from 'vue-highlightjs'
-import 'highlight.js/styles/atom-one-dark.css'
+import 'highlight.js/styles/atom-one-light.css'
 Vue.use(VueHighlightJS)
 // 使用 axios
 Vue.prototype.$axios = axios

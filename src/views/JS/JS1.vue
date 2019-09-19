@@ -74,7 +74,6 @@ a = ['Dave'];    // 报错`
 <style lang="scss">
 .letconst{
   text-align: left;
-  // width: 900px;
   h2,h3{
     line-height: 2.3rem;
   }

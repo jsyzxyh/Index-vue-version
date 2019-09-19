@@ -52,7 +52,7 @@ function fn(){
     console.log(this.val);
 }
 fu(); // cn
-对象调用指向.前面内容
+//对象调用指向.前面内容
 var b=200
 var obj={
     a:100,
@@ -197,7 +197,6 @@ b.apply(a,arr); // Jack 300`
 <style lang="scss">
 .this{
   text-align: left;
-  // width: 900px;
   h2,h3{
     line-height: 2.3rem;
   }

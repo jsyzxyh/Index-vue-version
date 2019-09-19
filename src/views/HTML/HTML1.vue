@@ -6,7 +6,7 @@
     <el-table
       :data="html5Canvas"
       border
-      style="width: 100%">
+      style="width: 90%">
       <el-table-column
         prop="label"
         label="标签"
@@ -21,7 +21,7 @@
     <el-table
       :data="html5Media"
       border
-      style="width: 100%">
+      style="width: 90%">
       <el-table-column
         prop="label"
         label="标签"
@@ -36,7 +36,7 @@
     <el-table
       :data="html5Form"
       border
-      style="width: 100%">
+      style="width: 90%">
       <el-table-column
         prop="label"
         label="标签"
@@ -51,7 +51,7 @@
     <el-table
       :data="html5Semantics"
       border
-      style="width: 100%">
+      style="width: 90%">
       <el-table-column
         prop="label"
         label="标签"
@@ -66,7 +66,7 @@
     <el-table
       :data="html5Input"
       border
-      style="width: 100%">
+      style="width: 90%">
       <el-table-column
         prop="type"
         label="类型"

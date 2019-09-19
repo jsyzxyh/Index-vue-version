@@ -155,6 +155,10 @@ export default {
         {
           name: '交通银行校园招聘',
           url: 'https://job.bankcomm.com/queryPosition.do'
+        },
+        {
+          name: '中兴校园招聘',
+          url: 'http://job.zte.com.cn/recruitment-list'
         }
       ]
     }

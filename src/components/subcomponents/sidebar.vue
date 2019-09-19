@@ -70,7 +70,7 @@ export default {
 
 <style lang="scss">
 .leftBar{
-  width: 150px;
+  // width: 150px;
   border-right: 1px solid #ebeef5;
   .el-menu{
     .el-menu-item-group{
