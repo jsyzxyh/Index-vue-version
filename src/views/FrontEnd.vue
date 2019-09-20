@@ -121,6 +121,7 @@ export default {
           width: 95%;
           code{
             font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
+            border-radius: 6px;
           }
           .javascript.hljs{
             padding:10px 15px;

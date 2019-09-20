@@ -159,6 +159,10 @@ export default {
         {
           name: '中兴校园招聘',
           url: 'http://job.zte.com.cn/recruitment-list'
+        },
+        {
+          name: '中国电信招聘',
+          url: 'http://campus.51job.com/chinatelecom/campus.html'
         }
       ]
     }
