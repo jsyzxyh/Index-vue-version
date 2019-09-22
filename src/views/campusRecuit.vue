@@ -77,14 +77,6 @@ export default {
           url: 'http://campus.chinahr.com/views/2020-qihu360/job_intern.html'
         },
         {
-          name: '平安银行校园招聘',
-          url: 'http://campus.pingan.com/freshGraduates?keyWord=%E5%89%8D%E7%AB%AF'
-        },
-        {
-          name: '中国农业银行校园招聘',
-          url: 'https://career.abchina.com/build/index.html#/99'
-        },
-        {
           name: 'IBM校园招聘',
           url: 'https://campus.liepin.com/xycompany/v170863/'
         },
@@ -133,10 +125,6 @@ export default {
           url: 'http://campus.58.com/jobs.html'
         },
         {
-          name: '招商银行校园招聘',
-          url: 'http://career.cloud.cmbchina.com/index.html#jobDetail?id=dcbceba1-b1bb-4e7b-b67d-f3ae34561d79&returnUrl=#jobList?id=96574F8D-C7ED-4772-AE7C-BAC896D190C1'
-        },
-        {
           name: '上交所校园招聘',
           url: 'https://campus.liepin.com/xycompany/170835/'
         },
@@ -145,16 +133,12 @@ export default {
           url: 'http://campus.glodon.com/#/jobs?location=%E4%B8%8A%E6%B5%B7%E5%B8%82&page=1&_k=ufybe4'
         },
         {
-          name: '上海银行校园招聘',
-          url: 'https://bosc.zhiye.com/campus?k=&d=&c=&p=,3^10&PageIndex=1'
-        },
-        {
           name: '虎扑校园招聘',
           url: 'https://campus.liepin.com/xycompany/171003/'
         },
         {
-          name: '交通银行校园招聘',
-          url: 'https://job.bankcomm.com/queryPosition.do'
+          name: '米哈游校园招聘',
+          url: 'https://campus.mihoyo.com/#/job/3'
         },
         {
           name: '中兴校园招聘',
@@ -163,6 +147,30 @@ export default {
         {
           name: '中国电信招聘',
           url: 'http://campus.51job.com/chinatelecom/campus.html'
+        },
+        {
+          name: '平安银行校园招聘',
+          url: 'http://campus.pingan.com/freshGraduates?keyWord=%E5%89%8D%E7%AB%AF'
+        },
+        {
+          name: '中国农业银行校园招聘',
+          url: 'https://career.abchina.com/build/index.html#/99'
+        },
+        {
+          name: '浦发银行校园招聘',
+          url: 'http://spdb.zhaopin.com/gsjj.html#'
+        },
+        {
+          name: '招商银行校园招聘',
+          url: 'http://career.cloud.cmbchina.com/index.html#jobDetail?id=dcbceba1-b1bb-4e7b-b67d-f3ae34561d79&returnUrl=#jobList?id=96574F8D-C7ED-4772-AE7C-BAC896D190C1'
+        },
+        {
+          name: '交通银行校园招聘',
+          url: 'https://job.bankcomm.com/queryPosition.do'
+        },
+        {
+          name: '上海银行校园招聘',
+          url: 'https://bosc.zhiye.com/campus?k=&d=&c=&p=,3^10&PageIndex=1'
         }
       ]
     }
