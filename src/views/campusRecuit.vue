@@ -141,6 +141,14 @@ export default {
           url: 'https://campus.mihoyo.com/#/job/3'
         },
         {
+          name: '西部数据校园招聘',
+          url: 'http://campus.51job.com/wdc/jobs.html'
+        },
+        {
+          name: '上海电气校园招聘',
+          url: 'http://www.hotjob.cn/wt/SEC/web/index/campus'
+        },
+        {
           name: '中兴校园招聘',
           url: 'http://job.zte.com.cn/recruitment-list'
         },
@@ -171,6 +179,10 @@ export default {
         {
           name: '上海银行校园招聘',
           url: 'https://bosc.zhiye.com/campus?k=&d=&c=&p=,3^10&PageIndex=1'
+        },
+        {
+          name: '中国人寿校园招聘',
+          url: 'http://www.chinalife.com.cn/chinalife/zhaopin/'
         }
       ]
     }

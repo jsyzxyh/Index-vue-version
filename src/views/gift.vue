@@ -1,7 +1,8 @@
 <template>
   <div id="gift">
     <div id="blink" style="font-size:22px;padding-top:10px;">
-      <h3>情人节快乐</h3>
+      <h3>一周年快乐</h3>
+      <h3>2018.10.01 - 2019.10.01</h3>
       <h3>LOVE YOU</h3>
     </div>
     <div class="flower">
